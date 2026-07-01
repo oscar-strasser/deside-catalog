@@ -1,0 +1,83 @@
+{
+  "type": "Collection",
+  "id": "Sentinel1-EW-HH",
+  "stac_version": "1.1.0",
+  "description": "SENTINEL 1, Extra Wide Swath, HH Polarization",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sh.dataspace.copernicus.eu/ogc/wms/",
+      "type": "image/png",
+      "title": "Sentinel 1 EW HH",
+      "wms:layers": [
+        "EW_HH_DB"
+      ],
+      "role": [
+        "data"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Polar warp capability"
+    }
+  ],
+  "themes": [
+    "Energy",
+    "Aquaculture",
+    "Shipping"
+  ],
+  "tags": [
+    "Sentinel",
+    "Open data"
+  ],
+  "agency": [
+    "European Commission",
+    "ESA"
+  ],
+  "subcode": "SHS1",
+  "collection_group": "Other data",
+  "satellite": [
+    "Sentinel-1"
+  ],
+  "endpointtype": "Sentinel Hub WMS",
+  "title": "Sentinel 1 EW HH",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -85,
+          180,
+          85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-01T00:00:00Z",
+          "2026-07-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

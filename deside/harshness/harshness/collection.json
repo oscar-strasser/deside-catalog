@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "harshness",
+  "stac_version": "1.1.0",
+  "description": "The DESIDE Harshness Indicator generates harshness maps based on wave height, sea ice concentration, and iceberg density data. The user can set the magnitude of each variable that is considered 'harsh' and the weight that is given the variable.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Harshness capability"
+    }
+  ],
+  "themes": [
+    "Shipping",
+    "Climate"
+  ],
+  "agency": [
+    "C-CORE"
+  ],
+  "subcode": "harshness",
+  "collection_group": "Capabilities",
+  "endpointtype": "Collection-only",
+  "title": "Harshness capability",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179,
+          55,
+          179,
+          89
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-07-01T10:15:57.047314Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}

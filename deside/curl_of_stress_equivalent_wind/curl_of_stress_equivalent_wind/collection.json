@@ -1,0 +1,97 @@
+{
+  "type": "Collection",
+  "id": "curl_of_stress_equivalent_wind",
+  "stac_version": "1.1.0",
+  "description": "For the Global Ocean - The product contains hourly Level-4 sea surface wind and stress fields at 0.125 degrees horizontal spatial resolution. Scatterometer observations for Metop-B and Metop-C ASCAT and their collocated European Centre for Medium-Range Weather Forecasts (ECMWF) operational model variables are used to calculate temporally-averaged difference fields. These fields are used to correct for persistent biases in hourly ECMWF operational model fields. The product provides stress-equivalent wind and stress variables as well as their divergence and curl. The applied bias corrections, the standard deviation of the differences (for wind and stress fields) and difference of variances (for divergence and curl fields) are included in the product.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://wmts.marine.copernicus.eu/teroWmts/WIND_GLO_PHY_L4_NRT_012_004/cmems_obs-wind_glo_phy_nrt_l4_0.125deg_PT1H_202207",
+      "type": "image/png",
+      "title": "Curl of stress-equivalent wind",
+      "wmts:layer": "WIND_GLO_PHY_L4_NRT_012_004/cmems_obs-wind_glo_phy_nrt_l4_0.125deg_PT1H_202207/wind_curl",
+      "role": [
+        "data"
+      ],
+      "wmts:dimensions": {
+        "elevation": 0,
+        "style": "cmap:viridis"
+      },
+      "key": "27b3c8e9-e68f-4907-9036-6140216bde49"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Curl of stress-equivalent wind"
+    }
+  ],
+  "sci:doi": "https://doi.org/10.48670/moi-00305",
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "CMEMS"
+  ],
+  "subcode": "WCS",
+  "collection_group": "Wind",
+  "eox:colorlegend": {
+    "title": "Curl of stress-equivalent [s-1]",
+    "range": [
+      "rgba(68, 1, 84, 1)",
+      "rgba(72, 35, 116, 1)",
+      "rgba(64, 67, 135, 1)",
+      "rgba(52, 94, 141, 1)",
+      "rgba(41, 120, 142, 1)",
+      "rgba(32, 144, 140, 1)",
+      "rgba(34, 167, 132, 1)",
+      "rgba(68, 190, 112, 1)",
+      "rgba(121, 209, 81, 1)",
+      "rgba(189, 223, 38, 1)",
+      "rgba(253, 231, 37, 1)"
+    ],
+    "domain": [
+      -0.0000923,
+      0.0000868
+    ]
+  },
+  "endpointtype": "marinedatastore_WMTSCapabilities",
+  "title": "Curl of stress-equivalent wind",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.9375,
+          -89.9375,
+          179.9375,
+          89.9375
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-12-01T00:00:00Z",
+          "2026-06-29T23:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

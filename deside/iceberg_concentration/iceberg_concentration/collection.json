@@ -1,0 +1,89 @@
+{
+  "type": "Collection",
+  "id": "iceberg_concentration",
+  "stac_version": "1.1.0",
+  "description": "The iceberg product contains 4 datasets (IW and EW modes and mosaic for the two modes) describing iceberg concentration as number of icebergs counted within 10x10 km grid cells. The iceberg concentration is derived by applying a Constant False Alarm Rate (CFAR) algorithm on data from Synthetic Aperture Radar (SAR) satellite sensors. /nThe iceberg product also contains two additional datasets of individual iceberg positions in Greenland-Newfoundland-Labrador Waters. These datasets are in shapefile format to allow the best representation of the icebergs (the 1st dataset contains the iceberg point observations, the 2nd dataset contains the polygonized satellite coverage). These are also derived by applying a Constant False Alarm Rate (CFAR) algorithm on Sentinel-1 SAR imagery. Despite its precision (individual icebergs are proposed), this product is a generic and automated product and needs expertise to be correctly used. For all applications concerning marine navigation, please refer to the national Ice Service of the country concerned.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://wmts.marine.copernicus.eu/teroWmts/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007/DMI-ARC-SEAICE_BERG_MOSAIC-L4-NRT-OBS_202511",
+      "type": "image/png",
+      "title": "Iceberg concentration",
+      "wmts:layer": "SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007/DMI-ARC-SEAICE_BERG_MOSAIC-L4-NRT-OBS_202511/ibc",
+      "role": [
+        "data"
+      ],
+      "wmts:dimensions": {
+        "elevation": 0,
+        "style": "cmap:ice,range:0/1"
+      },
+      "key": "52d2b454-8fbd-474e-ad73-927f144ad583"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Iceberg concentration"
+    }
+  ],
+  "sci:doi": "10.48670/moi-00129",
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "CMEMS"
+  ],
+  "subcode": "IBC",
+  "collection_group": "Icebergs",
+  "eox:colorlegend": {
+    "title": "Iceberg concentration (number of icebergs per 100 km2) [1e-2 km-2]",
+    "range": [
+      "rgb(4, 6, 21)",
+      "rgb(69, 123, 185)",
+      "rgb(229, 248, 252)"
+    ],
+    "domain": [
+      0,
+      1
+    ]
+  },
+  "endpointtype": "marinedatastore_WMTSCapabilities",
+  "title": "Iceberg concentration",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          30.0,
+          179.8999999999795,
+          89.93999999999991
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T05:43:00Z",
+          "2026-07-01T04:12:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

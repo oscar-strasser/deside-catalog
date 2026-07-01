@@ -1,0 +1,85 @@
+{
+  "type": "Collection",
+  "id": "cmems_baltic_ice_thickness_chart",
+  "stac_version": "1.1.0",
+  "description": "The operational sea ice service at FMI provides ice parameters over the Baltic Sea. The parameters are based on ice chart produced on daily basis during the Baltic Sea ice season and show the ice concentration in a 1 km grid. Ice thickness chart (ITC) is a product based on the most recent available ice chart (IC) and a SAR image. The SAR data is used to update the ice information in the IC. The ice regions in the IC are updated according to a SAR segmentation and new ice thickness values are assigned to each SAR segment based on the SAR backscattering and the ice IC thickness range at that location.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://wmts.marine.copernicus.eu/teroWmts/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_004/FMI-BAL-SEAICE_THICK-L4-NRT-OBS",
+      "type": "image/png",
+      "title": "Baltic Sea Ice Chart Thickness",
+      "wmts:layer": "SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_004/FMI-BAL-SEAICE_THICK-L4-NRT-OBS/ice_thickness",
+      "role": [
+        "data"
+      ],
+      "key": "80a99bff-e63e-48f7-bac9-e0d370bf7fa4"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Baltic Sea Ice Chart Thickness"
+    }
+  ],
+  "sci:doi": "10.48670/moi-00132",
+  "themes": [
+    "Baltic"
+  ],
+  "agency": [
+    "CMEMS"
+  ],
+  "subcode": "cmems_baltic_ice_thickness_chart",
+  "collection_group": "Baltic",
+  "eox:colorlegend": {
+    "title": "Chart Sea Ice Thickness [cm]",
+    "range": [
+      "#040615",
+      "#457bfc",
+      "#e5f8fc"
+    ],
+    "domain": [
+      0,
+      40
+    ]
+  },
+  "endpointtype": "marinedatastore_WMTSCapabilities",
+  "title": "Baltic Sea Ice Chart Thickness",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.0,
+          53.20000076293945,
+          31.0,
+          66.19999694824219
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2026-06-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

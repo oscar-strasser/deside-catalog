@@ -1,0 +1,176 @@
+{
+  "type": "Collection",
+  "id": "eastward_wind",
+  "stac_version": "1.1.0",
+  "description": "For the Global Ocean - The product contains hourly Level-4 sea surface wind and stress fields at 0.125 degrees horizontal spatial resolution. Scatterometer observations for Metop-B and Metop-C ASCAT and their collocated European Centre for Medium-Range Weather Forecasts (ECMWF) operational model variables are used to calculate temporally-averaged difference fields. These fields are used to correct for persistent biases in hourly ECMWF operational model fields. The product provides stress-equivalent wind and stress variables as well as their divergence and curl. The applied bias corrections, the standard deviation of the differences (for wind and stress fields) and difference of variances (for divergence and curl fields) are included in the product.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./eastward_wind/collection.json",
+      "type": "application/json",
+      "title": "Stress-equivalent wind eastward component",
+      "endpointtype": "marinedatastore_WMTSCapabilities",
+      "code": "EWW",
+      "id": "eastward_wind",
+      "themes": [
+        "Shipping"
+      ],
+      "agency": [
+        "CMEMS"
+      ],
+      "subcode": "EWW",
+      "collection_group": "Wind"
+    },
+    {
+      "rel": "service",
+      "href": "https://cmems.gtif.eox.at/cmems?dataset_id=cmems_obs-wind_glo_phy_nrt_l4_0.125deg_PT1H&variables=eastward_wind&start_datetime={{date_start}}&end_datetime={{date_end}}&minimum_longitude={{bbox.0}}&minimum_latitude={{bbox.1}}&maximum_longitude={{bbox.2}}&maximum_latitude={{bbox.3}}&minimum_depth={{depth}}&maximum_depth={{depth}}",
+      "type": "application/json",
+      "id": "process_cmems",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2024",
+      "attribution": "{ EOxCloudless 2024: <a href=\"https://s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"https://eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024) }"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "image/png",
+      "title": "Terrain Light Stereographic North",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "sx-cat_ortho680500",
+      "wms:layers": "sx-cat_ortho680500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:680500",
+        "def": "+proj=ortho +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs",
+        "extent": [
+          -6422528,
+          -6422528,
+          6422528,
+          6422528
+        ]
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "invisible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    }
+  ],
+  "sci:doi": "https://doi.org/10.48670/moi-00305",
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "CMEMS"
+  ],
+  "subcode": "EWW",
+  "collection_group": "Wind",
+  "eox:colorlegend": {
+    "title": "Stress-equivalent wind eastward component at 10 m [m s-1]",
+    "range": [
+      "rgb(16, 24, 63)",
+      "rgb(41, 127, 185)",
+      "rgb(234, 234, 234)",
+      "rgb(170, 41, 36)",
+      "rgb(59, 6, 14)"
+    ],
+    "domain": [
+      -37,
+      37
+    ]
+  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/jsonforms/cmems_jsonform.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/chartdefs/eastward_wind.json",
+  "title": "Stress-equivalent wind eastward component",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.9375,
+          -89.9375,
+          179.9375,
+          89.9375
+        ],
+        [
+          -179.9375,
+          -89.9375,
+          179.9375,
+          89.9375
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-12-01T00:00:00Z",
+          "2026-06-29T23:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "EWW"
+    ],
+    "themes": [
+      "Shipping"
+    ]
+  }
+}

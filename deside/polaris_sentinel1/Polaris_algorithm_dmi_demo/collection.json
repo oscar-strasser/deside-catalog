@@ -1,0 +1,69 @@
+{
+  "type": "Collection",
+  "id": "Polaris_algorithm_dmi_demo",
+  "stac_version": "1.1.0",
+  "description": "The Polar Operational Limit Assessment Risk Indexing System (POLARIS) is a methodology to assess the risk posed to a ship by ice conditions in relation to the ship's assigned ice class. It uses the WMO standard sea ice charts as the basis for the calculation.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "style",
+      "href": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/collections/Polaris_algorithm_dmi_demo/style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "20250120T0900"
+      ]
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "POLARIS combined"
+    }
+  ],
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "IMO"
+  ],
+  "subcode": "Polaris_algorithm_dmi_demo",
+  "collection_group": "Capabilities",
+  "endpointtype": "FlatGeobuf source",
+  "title": "POLARIS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -120.0,
+          14.0,
+          70.0,
+          85.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T10:05:00Z",
+          "2025-01-20T09:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

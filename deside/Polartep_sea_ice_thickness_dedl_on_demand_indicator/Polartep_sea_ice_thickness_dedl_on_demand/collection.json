@@ -1,0 +1,54 @@
+{
+  "type": "Collection",
+  "id": "Polartep_sea_ice_thickness_dedl_on_demand",
+  "stac_version": "1.1.0",
+  "description": "Sea Ice Thickness from DestinE visualized On Demand. Important note: Displayed is only first time slice of the requested time interval at the moment.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Sea Ice Thickness from DestinE On Demand"
+    }
+  ],
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "DestinE"
+  ],
+  "collection_group": "Capabilities",
+  "eodash:mapProjection": {
+    "name": "EPSG:3413",
+    "def": "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs"
+  },
+  "endpointtype": "Collection-only",
+  "title": "Sea Ice Thickness from DestinE On Demand",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179,
+          55,
+          179,
+          89
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-07-01T10:16:37.010348Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}

@@ -1,0 +1,177 @@
+{
+  "type": "Collection",
+  "id": "cmems_baltic_water_pot_temp",
+  "stac_version": "1.1.0",
+  "description": "This Baltic Sea physical model product provides forecasts for the physical conditions in the Baltic Sea. The Baltic forecast is updated twice daily from a 00Z production proving a 10 days forecast and from a 12Z production providing a 6 days forecast. Several datasets are provided: One with hourly instantaneous values, one with daily mean values and one with monthly mean values, all containing these parameters: sea level variations, ice concentration and thickness at the surface, and temperature, salinity and horizontal and vertical velocities for the 3D field. Additionally a dataset with 15 minutes (instantaneous) surface values are provided for the sea level variation and the surface horizontal currents, as well as detided daily values. The product is produced by a Baltic Sea set up of the NEMOv4.2.1 ocean model. This product is provided at the models native grid with a resolution of 1 nautical mile in the horizontal, and with up to 56 vertical depth levels. The area covers the Baltic Sea including the transition area towards the North Sea (i.e. the Danish Belts, the Kattegat and Skagerrak). The ocean model is forced with Stokes drift data from the Baltic Sea Wave forecast product (BALTICSEA_ANALYSISFORECAST_WAV_003_010). Satellite SST, sea ice concentrations and in-situ T and S profiles are assimilated into the model's analysis field.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_water_pot_temp/collection.json",
+      "type": "application/json",
+      "title": "Baltic Water Potential Temperature",
+      "endpointtype": "marinedatastore_WMTSCapabilities",
+      "code": "cmems_baltic_water_pot_temp",
+      "id": "cmems_baltic_water_pot_temp",
+      "themes": [
+        "Baltic"
+      ],
+      "agency": [
+        "CMEMS"
+      ],
+      "subcode": "cmems_baltic_water_pot_temp",
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "service",
+      "href": "https://cmems.gtif.eox.at/cmems?dataset_id=cmems_mod_glo_phy_anfc_0.083deg_P1D-m&variables=sithick&start_datetime={{date_start}}&end_datetime={{date_end}}&minimum_longitude={{bbox.0}}&minimum_latitude={{bbox.1}}&maximum_longitude={{bbox.2}}&maximum_latitude={{bbox.3}}&minimum_depth={{depth}}&maximum_depth={{depth}}",
+      "type": "application/json",
+      "id": "process_cmems",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2024",
+      "attribution": "{ EOxCloudless 2024: <a href=\"https://s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"https://eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024) }"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "image/png",
+      "title": "Terrain Light Stereographic North",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "sx-cat_ortho680500",
+      "wms:layers": "sx-cat_ortho680500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:680500",
+        "def": "+proj=ortho +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs",
+        "extent": [
+          -6422528,
+          -6422528,
+          6422528,
+          6422528
+        ]
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "invisible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    }
+  ],
+  "sci:doi": "10.48670/moi-00010",
+  "themes": [
+    "Baltic"
+  ],
+  "agency": [
+    "CMEMS"
+  ],
+  "subcode": "cmems_baltic_water_pot_temp",
+  "collection_group": "Baltic",
+  "eox:colorlegend": {
+    "title": "Potential Temperature [Deg. Celsius]",
+    "range": [
+      "#042333",
+      "#40349F",
+      "#8B538D",
+      "#D66C6C",
+      "#FCA63C",
+      "#E8FA5B"
+    ],
+    "domain": [
+      2,
+      10
+    ]
+  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/jsonforms/cmems_jsonform.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/chartdefs/sithick.json",
+  "title": "Baltic Water Potential Temperature",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.041582107543945,
+          53.008296966552734,
+          30.208656311035156,
+          65.8909912109375
+        ],
+        [
+          9.041582107543945,
+          53.008296966552734,
+          30.208656311035156,
+          65.8909912109375
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2026-07-09T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "cmems_baltic_water_pot_temp"
+    ],
+    "themes": [
+      "Baltic"
+    ]
+  }
+}

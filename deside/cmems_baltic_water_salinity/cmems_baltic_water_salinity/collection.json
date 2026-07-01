@@ -1,0 +1,87 @@
+{
+  "type": "Collection",
+  "id": "cmems_baltic_water_salinity",
+  "stac_version": "1.1.0",
+  "description": "This Baltic Sea physical model product provides forecasts for the physical conditions in the Baltic Sea. The Baltic forecast is updated twice daily from a 00Z production proving a 10 days forecast and from a 12Z production providing a 6 days forecast. Several datasets are provided: One with hourly instantaneous values, one with daily mean values and one with monthly mean values, all containing these parameters: sea level variations, ice concentration and thickness at the surface, and temperature, salinity and horizontal and vertical velocities for the 3D field. Additionally a dataset with 15 minutes (instantaneous) surface values are provided for the sea level variation and the surface horizontal currents, as well as detided daily values. The product is produced by a Baltic Sea set up of the NEMOv4.2.1 ocean model. This product is provided at the models native grid with a resolution of 1 nautical mile in the horizontal, and with up to 56 vertical depth levels. The area covers the Baltic Sea including the transition area towards the North Sea (i.e. the Danish Belts, the Kattegat and Skagerrak). The ocean model is forced with Stokes drift data from the Baltic Sea Wave forecast product (BALTICSEA_ANALYSISFORECAST_WAV_003_010). Satellite SST, sea ice concentrations and in-situ T and S profiles are assimilated into the model's analysis field.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://wmts.marine.copernicus.eu/teroWmts/BALTICSEA_ANALYSISFORECAST_PHY_003_006/cmems_mod_bal_phy_anfc_P1D-m_202411",
+      "type": "image/png",
+      "title": "Baltic Water Salinity",
+      "wmts:layer": "BALTICSEA_ANALYSISFORECAST_PHY_003_006/cmems_mod_bal_phy_anfc_P1D-m_202411/so",
+      "role": [
+        "data"
+      ],
+      "key": "2a1e0874-47f1-4f3e-af80-7201175d988d"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Baltic Water Salinity"
+    }
+  ],
+  "sci:doi": "10.48670/moi-00010",
+  "themes": [
+    "Baltic"
+  ],
+  "agency": [
+    "CMEMS"
+  ],
+  "subcode": "cmems_baltic_water_salinity",
+  "collection_group": "Baltic",
+  "eox:colorlegend": {
+    "title": "Water Salinity [1e-3]",
+    "range": [
+      "rgb(36, 16, 105)",
+      "rgb(12, 77, 151)",
+      "rgb(55, 142, 132)",
+      "rgb(135, 207, 97)",
+      "rgb(246, 237, 146)"
+    ],
+    "domain": [
+      2,
+      35
+    ]
+  },
+  "endpointtype": "marinedatastore_WMTSCapabilities",
+  "title": "Baltic Water Salinity",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.041582107543945,
+          53.008296966552734,
+          30.208656311035156,
+          65.8909912109375
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T00:00:00Z",
+          "2026-07-09T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

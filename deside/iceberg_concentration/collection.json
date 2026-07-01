@@ -1,0 +1,174 @@
+{
+  "type": "Collection",
+  "id": "iceberg_concentration",
+  "stac_version": "1.1.0",
+  "description": "The iceberg product contains 4 datasets (IW and EW modes and mosaic for the two modes) describing iceberg concentration as number of icebergs counted within 10x10 km grid cells. The iceberg concentration is derived by applying a Constant False Alarm Rate (CFAR) algorithm on data from Synthetic Aperture Radar (SAR) satellite sensors. /nThe iceberg product also contains two additional datasets of individual iceberg positions in Greenland-Newfoundland-Labrador Waters. These datasets are in shapefile format to allow the best representation of the icebergs (the 1st dataset contains the iceberg point observations, the 2nd dataset contains the polygonized satellite coverage). These are also derived by applying a Constant False Alarm Rate (CFAR) algorithm on Sentinel-1 SAR imagery. Despite its precision (individual icebergs are proposed), this product is a generic and automated product and needs expertise to be correctly used. For all applications concerning marine navigation, please refer to the national Ice Service of the country concerned.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./iceberg_concentration/collection.json",
+      "type": "application/json",
+      "title": "Iceberg concentration",
+      "endpointtype": "marinedatastore_WMTSCapabilities",
+      "code": "IBC",
+      "id": "iceberg_concentration",
+      "themes": [
+        "Shipping"
+      ],
+      "agency": [
+        "CMEMS"
+      ],
+      "subcode": "IBC",
+      "collection_group": "Icebergs"
+    },
+    {
+      "rel": "service",
+      "href": "https://cmems.gtif.eox.at/cmems?dataset_id=DMI-ARC-SEAICE_BERG_MOSAIC-L4-NRT-OBS&variables=ibc&start_datetime={{date_start}}&end_datetime={{date_end}}&minimum_longitude={{bbox.0}}&minimum_latitude={{bbox.1}}&maximum_longitude={{bbox.2}}&maximum_latitude={{bbox.3}}&minimum_depth={{depth}}&maximum_depth={{depth}}",
+      "type": "application/json",
+      "id": "process_cmems",
+      "method": "GET"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "EOxCloudless 2024",
+      "roles": [
+        "baselayer",
+        "visible"
+      ],
+      "id": "cloudless-2024",
+      "attribution": "{ EOxCloudless 2024: <a href=\"https://s2maps.eu\" target=\"_blank\">Sentinel-2 cloudless - s2maps.eu</a> by <a href=\"https://eox.at\" target=\"_blank\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024) }"
+    },
+    {
+      "rel": "wms",
+      "href": "https://sxcat-demo.eox.at/sxcat_maps/wms",
+      "type": "image/png",
+      "title": "Terrain Light Stereographic North",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "sx-cat_ortho680500",
+      "wms:layers": "sx-cat_ortho680500",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }",
+      "eodash:proj4_def": {
+        "name": "ORTHO:680500",
+        "def": "+proj=ortho +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs",
+        "extent": [
+          -6422528,
+          -6422528,
+          6422528,
+          6422528
+        ]
+      }
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/terrain-light_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "Terrain light",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "terrain-light",
+      "attribution": "{ Terrain light: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/osm_3857/default/g/{z}/{y}/{x}.jpeg",
+      "type": "image/jpeg",
+      "title": "OSM Background",
+      "roles": [
+        "baselayer",
+        "invisible"
+      ],
+      "id": "eox-osm",
+      "attribution": "{ OSM: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors and <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>, Rendering &copy; <a href=\"http://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "xyz",
+      "href": "https://s2maps-tiles.eu/wmts/1.0.0/overlay_base_bright_3857/default/g/{z}/{y}/{x}.png",
+      "type": "image/png",
+      "title": "Overlay labels",
+      "roles": [
+        "overlay",
+        "invisible"
+      ],
+      "id": "overlay_bright",
+      "attribution": "{ Overlay: Data &copy; <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a> contributors, Made with Natural Earth, Rendering &copy; <a href=\"https://eox.at\" target=\"_blank\">EOX</a> }"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    }
+  ],
+  "sci:doi": "10.48670/moi-00129",
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "CMEMS"
+  ],
+  "subcode": "IBC",
+  "collection_group": "Icebergs",
+  "eox:colorlegend": {
+    "title": "Iceberg concentration (number of icebergs per 100 km2) [1e-2 km-2]",
+    "range": [
+      "rgb(4, 6, 21)",
+      "rgb(69, 123, 185)",
+      "rgb(229, 248, 252)"
+    ],
+    "domain": [
+      0,
+      1
+    ]
+  },
+  "eodash:jsonform": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/jsonforms/cmems_jsonform.json",
+  "eodash:vegadefinition": "https://raw.githubusercontent.com/gtif-cerulean/assets/refs/heads/main/chartdefs/ibc.json",
+  "title": "Iceberg concentration",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          30.0,
+          179.8999999999795,
+          89.93999999999991
+        ],
+        [
+          -180.0,
+          30.0,
+          179.8999999999795,
+          89.93999999999991
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-01-01T05:43:00Z",
+          "2026-07-01T04:12:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "summaries": {
+    "subcode": [
+      "IBC"
+    ],
+    "themes": [
+      "Shipping"
+    ]
+  }
+}

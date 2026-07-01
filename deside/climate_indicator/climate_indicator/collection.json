@@ -1,0 +1,51 @@
+{
+  "type": "Collection",
+  "id": "climate_indicator",
+  "stac_version": "1.1.0",
+  "description": "CMIP6 models and scenarios /nClimate Models /nWe utilize a set of state-of-the-art global models from the Coupled Model Intercomparison Project 6 (CMIP6). These models represent a range of Earth system complexities and originate from internationally recognized climate research institutions. /nEach model simulates the Earth’s climate system, including processes relevant to sea ice such as surface temperature, ocean currents, precipitation, and wind. Below is an overview of the models featured. /nNorESM2-LM (Norwegian Earth System Model) /nDeveloped by the Norwegian Climate Centre, NorESM2-LM is an Earth system model. Built on the CESM2 framework, the model provides detailed representations of atmospheric chemistry, aerosols, ocean biochemistry, and land processes. In context of sea ice, NorESM2-LM features an updated sea ice model component based on the Los Alamos CICE model. This allows for realistic representation of thermodynamic, and dynamic sea ice processes in both hemispheres. /nMRI-ESM2-0 (Meteorological Research Institute Earth System Model) /nBuilt by Japan’s Meteorological Research Institute, the model emphasizes atmospheric variability and hydrological processes. The sea ice module is derived from the Sea Ice Component of the CCSR model suite which incorporates both dynamic transport and thermodynamic growth/melt processes. This makes the model well-suited for capturing the seasonal evolution of sea ice extent. /n MIROC6 ((Model for Interdisciplinary Research on Climate) /nMIROC6 features improved cloud microphysics, ocean mixing, and an updated sea ice component. Its sea ice model includes a multi-category thickness distribution, which strengthens realism in simulating sea ice thinning under warming scenarios and enables better representation of marginal ice zones. /nEC-Earth3-Veg (European community Earth System Model) /nThis model includes dynamic vegetation and land-atmosphere interactions in addition to a realistic ocean and sea ice model (LIM3). It is capable of simulating complex feedback between sea ice, climate, and the biosphere. /nCanESM5 (Canadian Earth System Model) /nCanESM5 includes interactive greenhouse gas cycles and a robust sea ice component based on CICE. It performs well in simulations of long-term Arctic sea ice trends. /nACCESS-CM2 /nThe Australian Community Climate and Earth System Simulator couples atmospheric and ocean components with the NEMO-LIM2 sea ice model. It provides improved performance in the Southern Ocean and has been used to assess Antarctic sea ice variability. /nThese models were selected for their relevance to polar climate research and the availability of sea ice output across multiple scenarios. /nClimate Scenarios (SSPs) /nThe future development of sea ice is highly dependent on the trajectory of global greenhouse gas emissions. Under the Shared Socioeconomic Pathways (SSPs), we use five scenarios describing alternative futures in terms of climate policy and socioeconomic development. /nSSP126 (Low emissions / sustainability scenario) /nA scenario focused on sustainable development and strong climate mitigation efforts. Here, warming is limited, and some recovery or stabilization of sea ice may occur. /nSSP245 (Intermediate / stabilization scenario) /nA 'middle-of-the-road' scenario with moderate emissions reductions. Sea ice continues to decline, but not as rapidly as in higher-emission pathways. /nSSP370 (High emissions / regional rivalry scenario) /nThis scenario projects a future characterized by fragment international cooperation and high emissions. Sea ice decline accelerates, with potential for ice-free Arctic summers mid-century. /nSSP460 (Inequality scenario) /nEmission remain relatively high in many regions due to unequal access to low-carbon technologies. Sea ice decline is significant, but less extreme than under SSP585. /nSSP585 (Very high emissions / fossil-fueled development) /nThe highest emissions scenario, often used as a worst-case benchmark. Here, sea ice retreats rapidly, with the Arctic becoming seasonally ice-free before 2100.\n",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Climate indicator"
+    }
+  ],
+  "themes": [
+    "Climate Change"
+  ],
+  "agency": [
+    "Various"
+  ],
+  "subcode": "CI",
+  "collection_group": "Capabilities",
+  "endpointtype": "Collection-only",
+  "title": "Climate indicator",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-07-01T10:15:57.046263Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}

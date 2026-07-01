@@ -1,0 +1,91 @@
+{
+  "type": "Collection",
+  "id": "wind_stress_northward",
+  "stac_version": "1.1.0",
+  "description": "For the Global Ocean - The product contains hourly Level-4 sea surface wind and stress fields at 0.125 degrees horizontal spatial resolution. Scatterometer observations for Metop-B and Metop-C ASCAT and their collocated European Centre for Medium-Range Weather Forecasts (ECMWF) operational model variables are used to calculate temporally-averaged difference fields. These fields are used to correct for persistent biases in hourly ECMWF operational model fields. The product provides stress-equivalent wind and stress variables as well as their divergence and curl. The applied bias corrections, the standard deviation of the differences (for wind and stress fields) and difference of variances (for divergence and curl fields) are included in the product.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "wmts",
+      "href": "https://wmts.marine.copernicus.eu/teroWmts/WIND_GLO_PHY_L4_NRT_012_004/cmems_obs-wind_glo_phy_nrt_l4_0.125deg_PT1H_202207",
+      "type": "image/png",
+      "title": "Surface wind stress northward component",
+      "wmts:layer": "WIND_GLO_PHY_L4_NRT_012_004/cmems_obs-wind_glo_phy_nrt_l4_0.125deg_PT1H_202207/northward_stress",
+      "role": [
+        "data"
+      ],
+      "wmts:dimensions": {
+        "elevation": 0,
+        "style": "cmap:balance"
+      },
+      "key": "5ef01747-4dcc-466f-9404-7ba1c360ecb5"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Surface wind stress northward component"
+    }
+  ],
+  "sci:doi": "https://doi.org/10.48670/moi-00305",
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "CMEMS"
+  ],
+  "subcode": "WSN",
+  "collection_group": "Wind",
+  "eox:colorlegend": {
+    "title": "Surface wind stress northward component [N m-2]",
+    "range": [
+      "rgb(16, 24, 63)",
+      "rgb(41, 127, 185)",
+      "rgb(234, 234, 234)",
+      "rgb(170, 41, 36)",
+      "rgb(59, 6, 14)"
+    ],
+    "domain": [
+      -1.5,
+      1.5
+    ]
+  },
+  "endpointtype": "marinedatastore_WMTSCapabilities",
+  "title": "Surface wind stress northward component",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.9375,
+          -89.9375,
+          179.9375,
+          89.9375
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-12-01T00:00:00Z",
+          "2026-06-29T23:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
+}

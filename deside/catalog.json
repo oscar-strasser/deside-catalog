@@ -1,0 +1,792 @@
+{
+  "type": "Catalog",
+  "id": "deside",
+  "stac_version": "1.1.0",
+  "description": "Catalog providing description to available datasets to the DESIDE project",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json",
+      "title": "DESIDE project catalog"
+    },
+    {
+      "rel": "child",
+      "href": "./Polaris_algorithm_dmi_demo/collection.json",
+      "type": "application/json",
+      "title": "POLARIS",
+      "code": "Polaris_algorithm_dmi_demo",
+      "id": "Polaris_algorithm_dmi_demo",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "Polaris_algorithm_dmi_demo",
+      "agency": [
+        "IMO"
+      ],
+      "collection_group": "Capabilities"
+    },
+    {
+      "rel": "child",
+      "href": "./polaris_sentinel1/collection.json",
+      "type": "application/json",
+      "title": "POLARIS combined",
+      "code": "POS1",
+      "id": "polaris_sentinel1",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "POS1",
+      "satellite": [
+        "Sentinel-1"
+      ],
+      "collection_group": "Capabilities"
+    },
+    {
+      "rel": "child",
+      "href": "./iceberg_concentration/collection.json",
+      "type": "application/json",
+      "title": "Iceberg concentration",
+      "code": "IBC",
+      "id": "iceberg_concentration",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "IBC",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Icebergs"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_ice_surface_temperature/collection.json",
+      "type": "application/json",
+      "title": "Sea ice surface temperature",
+      "code": "IST",
+      "id": "sea_ice_surface_temperature",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "IST",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./mean_sea_ice_age/collection.json",
+      "type": "application/json",
+      "title": "Mean sea ice age",
+      "code": "MSIA",
+      "id": "mean_sea_ice_age",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "MSIA",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./ice_concentration/collection.json",
+      "type": "application/json",
+      "title": "Ice concentration",
+      "code": "SICONC",
+      "id": "ice_concentration",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "SICONC",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_ice_thickness/collection.json",
+      "type": "application/json",
+      "title": "Sea ice thickness",
+      "code": "SIT",
+      "id": "sea_ice_thickness",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "SIT",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_ice_speed/collection.json",
+      "type": "application/json",
+      "title": "Sea ice speed",
+      "code": "SIVELO",
+      "id": "sea_ice_speed",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "SIVELO",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_ice_eastward_velocity/collection.json",
+      "type": "application/json",
+      "title": "Sea ice eastward velocity",
+      "code": "USI",
+      "id": "sea_ice_eastward_velocity",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "USI",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_ice_northward_velocity/collection.json",
+      "type": "application/json",
+      "title": "Sea ice northward velocity",
+      "code": "VSI",
+      "id": "sea_ice_northward_velocity",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "VSI",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_ice_detections/collection.json",
+      "type": "application/json",
+      "title": "Sea Ice Detections",
+      "code": "SID",
+      "id": "sea_ice_detections",
+      "themes": [
+        "shipping"
+      ],
+      "subcode": "SID",
+      "agency": [
+        "SMI"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_water_potential_temperature/collection.json",
+      "type": "application/json",
+      "title": "Sea water potential temperature",
+      "code": "SWPT",
+      "id": "sea_water_potential_temperature",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "SWPT",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Water"
+    },
+    {
+      "rel": "child",
+      "href": "./maximum_crest_wave/collection.json",
+      "type": "application/json",
+      "title": "Maximum crest trough wave height",
+      "code": "VCMX",
+      "id": "maximum_crest_wave",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "VCMX",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Waves"
+    },
+    {
+      "rel": "child",
+      "href": "./wave_significant_height/collection.json",
+      "type": "application/json",
+      "title": "Spectral significant wave height",
+      "code": "VHM0",
+      "id": "wave_significant_height",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "VHM0",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Waves"
+    },
+    {
+      "rel": "child",
+      "href": "./mean_wave_direction/collection.json",
+      "type": "application/json",
+      "title": "Mean wave direction",
+      "code": "VMDR",
+      "id": "mean_wave_direction",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "VMDR",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Waves"
+    },
+    {
+      "rel": "child",
+      "href": "./spectral_moments_wave_period/collection.json",
+      "type": "application/json",
+      "title": "Spectral moments primary swell wave period",
+      "code": "VTM01",
+      "id": "spectral_moments_wave_period",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "VTM01",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Waves"
+    },
+    {
+      "rel": "child",
+      "href": "./eastward_wind/collection.json",
+      "type": "application/json",
+      "title": "Stress-equivalent wind eastward component",
+      "code": "EWW",
+      "id": "eastward_wind",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "EWW",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Wind"
+    },
+    {
+      "rel": "child",
+      "href": "./northward_wind/collection.json",
+      "type": "application/json",
+      "title": "Stress-equivalent wind northward component",
+      "code": "NWW",
+      "id": "northward_wind",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "NWW",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Wind"
+    },
+    {
+      "rel": "child",
+      "href": "./wind_stress_eastward/collection.json",
+      "type": "application/json",
+      "title": "Surface wind stress eastward component",
+      "code": "WSE",
+      "id": "wind_stress_eastward",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "WSE",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Wind"
+    },
+    {
+      "rel": "child",
+      "href": "./wind_stress_northward/collection.json",
+      "type": "application/json",
+      "title": "Surface wind stress northward component",
+      "code": "WSN",
+      "id": "wind_stress_northward",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "WSN",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Wind"
+    },
+    {
+      "rel": "child",
+      "href": "./curl_of_stress_equivalent_wind/collection.json",
+      "type": "application/json",
+      "title": "Curl of stress-equivalent wind",
+      "code": "WCS",
+      "id": "curl_of_stress_equivalent_wind",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "WCS",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Wind"
+    },
+    {
+      "rel": "child",
+      "href": "./air_density/collection.json",
+      "type": "application/json",
+      "title": "Air density",
+      "code": "AD",
+      "id": "air_density",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "AD",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Wind"
+    },
+    {
+      "rel": "child",
+      "href": "./surface_snow_thickness/collection.json",
+      "type": "application/json",
+      "title": "Surface snow thickness",
+      "code": "SST",
+      "id": "surface_snow_thickness",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "SST",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./sea_surface_temperature_anomaly/collection.json",
+      "type": "application/json",
+      "title": "Sea surface temperature anomaly",
+      "code": "SSTA",
+      "id": "sea_surface_temperature_anomaly",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "SSTA",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Water"
+    },
+    {
+      "rel": "child",
+      "href": "./eastward_tide_velocity/collection.json",
+      "type": "application/json",
+      "title": "Eastward tide-induced velocity",
+      "code": "UOTIDE",
+      "id": "eastward_tide_velocity",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "UOTIDE",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Water"
+    },
+    {
+      "rel": "child",
+      "href": "./northwad_tide_velocity/collection.json",
+      "type": "application/json",
+      "title": "Northward tide-induced velocity",
+      "code": "VOTIDE",
+      "id": "northwad_tide_velocity",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "VOTIDE",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Water"
+    },
+    {
+      "rel": "child",
+      "href": "./eastward_velocity/collection.json",
+      "type": "application/json",
+      "title": "Eastward velocity",
+      "code": "UO",
+      "id": "eastward_velocity",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "UO",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Water"
+    },
+    {
+      "rel": "child",
+      "href": "./northward_velocity/collection.json",
+      "type": "application/json",
+      "title": "Northward velocity",
+      "code": "VO",
+      "id": "northward_velocity",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "VO",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Water"
+    },
+    {
+      "rel": "child",
+      "href": "./salinity/collection.json",
+      "type": "application/json",
+      "title": "Salinity",
+      "code": "SO",
+      "id": "salinity",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "SO",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Sea Water"
+    },
+    {
+      "rel": "child",
+      "href": "./climate_indicator/collection.json",
+      "type": "application/json",
+      "title": "Climate indicator",
+      "code": "CI",
+      "id": "climate_indicator",
+      "themes": [
+        "Climate Change"
+      ],
+      "subcode": "CI",
+      "agency": [
+        "Various"
+      ],
+      "collection_group": "Capabilities"
+    },
+    {
+      "rel": "child",
+      "href": "./harshness/collection.json",
+      "type": "application/json",
+      "title": "Harshness capability",
+      "code": "harshness",
+      "id": "harshness",
+      "themes": [
+        "Shipping",
+        "Climate"
+      ],
+      "subcode": "harshness",
+      "agency": [
+        "C-CORE"
+      ],
+      "collection_group": "Capabilities"
+    },
+    {
+      "rel": "child",
+      "href": "./polarwarp_sentinel1/collection.json",
+      "type": "application/json",
+      "title": "Polar warp capability",
+      "code": "polarwarp_sentinel1",
+      "id": "polarwarp_sentinel1",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "polarwarp_sentinel1",
+      "satellite": [
+        "Sentinel-1"
+      ],
+      "collection_group": "Capabilities",
+      "eodash:mapProjection": {
+        "name": "EPSG:3413",
+        "def": "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs"
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./structureicing/collection.json",
+      "type": "application/json",
+      "title": "Icing Predictor Index",
+      "code": "structureicing",
+      "id": "structureicing",
+      "themes": [
+        "Shipping",
+        "Climate"
+      ],
+      "subcode": "structureicing",
+      "agency": [
+        "C-CORE"
+      ],
+      "collection_group": "Capabilities"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_balitic_ice_concentration/collection.json",
+      "type": "application/json",
+      "title": "Baltic Sea Ice Concentration",
+      "code": "cmems_baltic_ice_concentration",
+      "id": "cmems_balitic_ice_concentration",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_ice_concentration",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_ice_thickness/collection.json",
+      "type": "application/json",
+      "title": "Baltic Sea Ice Thickness",
+      "code": "cmems_baltic_ice_thickness",
+      "id": "cmems_baltic_ice_thickness",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_ice_thickness",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_water_pot_temp/collection.json",
+      "type": "application/json",
+      "title": "Baltic Water Potential Temperature",
+      "code": "cmems_baltic_water_pot_temp",
+      "id": "cmems_baltic_water_pot_temp",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_water_pot_temp",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_water_salinity/collection.json",
+      "type": "application/json",
+      "title": "Baltic Water Salinity",
+      "code": "cmems_baltic_water_salinity",
+      "id": "cmems_baltic_water_salinity",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_water_salinity",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_water_velocity_east/collection.json",
+      "type": "application/json",
+      "title": "Baltic Water Velocity Eastward",
+      "code": "cmems_baltic_water_velocity_east",
+      "id": "cmems_baltic_water_velocity_east",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_water_velocity_east",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_water_velocity_north/collection.json",
+      "type": "application/json",
+      "title": "Baltic Water Velocity North",
+      "code": "cmems_baltic_water_velocity_north",
+      "id": "cmems_baltic_water_velocity_north",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_water_velocity_north",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_ice_thickness_chart/collection.json",
+      "type": "application/json",
+      "title": "Baltic Sea Ice Chart Thickness",
+      "code": "cmems_baltic_ice_thickness_chart",
+      "id": "cmems_baltic_ice_thickness_chart",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_ice_thickness_chart",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_ice_concentration_chart/collection.json",
+      "type": "application/json",
+      "title": "Baltic Sea Ice Chart Concentration",
+      "code": "cmems_baltic_ice_concentration_chart",
+      "id": "cmems_baltic_ice_concentration_chart",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_ice_concentration_chart",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_wave_height/collection.json",
+      "type": "application/json",
+      "title": "Baltic Wave Height",
+      "code": "cmems_baltic_wave_height",
+      "id": "cmems_baltic_wave_height",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_wave_height",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./cmems_baltic_wave_directon/collection.json",
+      "type": "application/json",
+      "title": "Baltic Wave Direction",
+      "code": "cmems_baltic_wave_directon",
+      "id": "cmems_baltic_wave_directon",
+      "themes": [
+        "Baltic"
+      ],
+      "subcode": "cmems_baltic_wave_directon",
+      "agency": [
+        "CMEMS"
+      ],
+      "collection_group": "Baltic"
+    },
+    {
+      "rel": "child",
+      "href": "./DMI_Icecharts/collection.json",
+      "type": "application/json",
+      "title": "DMI Ice charts",
+      "id": "DMI_Icecharts",
+      "themes": [
+        "Shipping"
+      ],
+      "agency": [
+        "DMI"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "child",
+      "href": "./Polartep_sea_ice_thickness_dedl_on_demand_indicator/collection.json",
+      "type": "application/json",
+      "title": "Sea Ice Thickness from DestinE On Demand",
+      "id": "Polartep_sea_ice_thickness_dedl_on_demand_indicator",
+      "themes": [
+        "Shipping"
+      ],
+      "agency": [
+        "DestinE"
+      ],
+      "collection_group": "Capabilities",
+      "eodash:mapProjection": {
+        "name": "EPSG:3413",
+        "def": "+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs"
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./RCM_data/collection.json",
+      "type": "application/json",
+      "title": "RADARSAT constellation mission (RCM) ",
+      "code": "rcm",
+      "id": "RCM_data",
+      "themes": [
+        "Shipping"
+      ],
+      "subcode": "rcm",
+      "thumbnail": [
+        "https://raw.githubusercontent.com/gtif-cerulean/assets/main/collections/Polartep_SeaIceCharts_demo/thumbnail.png"
+      ],
+      "collection_group": "Capabilities",
+      "eodash:mapProjection": {
+        "name": "EPSG:4326",
+        "def": "+proj=longlat +datum=WGS84 +no_defs +type=crs",
+        "extent": [
+          -180,
+          -90,
+          180,
+          90
+        ]
+      }
+    },
+    {
+      "rel": "child",
+      "href": "./DMI_polaris/collection.json",
+      "type": "application/json",
+      "title": "POLARIS (DMI)",
+      "id": "DMI_polaris",
+      "themes": [
+        "Aquaculture",
+        "Energy",
+        "Shipping"
+      ],
+      "providers": [
+        "DMI",
+        "EOX"
+      ],
+      "agency": [
+        "DMI"
+      ],
+      "collection_group": "Sea Ice"
+    },
+    {
+      "rel": "self",
+      "href": "https://gtif-cerulean.github.io/deside-catalog/deside/catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "title": "DESIDE project catalog"
+}
