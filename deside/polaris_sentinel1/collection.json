@@ -182,7 +182,7 @@
       "interval": [
         [
           "2022-01-01T00:00:00Z",
-          "2026-07-13T00:00:00Z"
+          "2026-07-14T00:00:00Z"
         ]
       ]
     }
@@ -196,9 +196,9 @@
     ],
     "themes": [
       "Shipping",
+      "shipping",
       "Energy",
-      "Aquaculture",
-      "shipping"
+      "Aquaculture"
     ],
     "satellite": [
       "Sentinel-1"
