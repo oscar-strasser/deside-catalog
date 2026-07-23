@@ -23,7 +23,7 @@
         "elevation": 0,
         "style": "cmap:viridis"
       },
-      "key": "35f79ac3-8d92-4abc-b7d0-75033d2533db"
+      "key": "bc3086e2-4acd-4e7d-9026-cf2a8e4c7a3c"
     },
     {
       "rel": "parent",
@@ -78,7 +78,7 @@
       "interval": [
         [
           "2024-01-01T00:00:00Z",
-          "2026-07-31T00:00:00Z"
+          "2026-08-01T00:00:00Z"
         ]
       ]
     }
