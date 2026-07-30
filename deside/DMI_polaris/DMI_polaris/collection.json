@@ -17,6 +17,15 @@
       "title": "POLARIS (DMI)"
     }
   ],
+  "themes": [
+    "Aquaculture",
+    "Energy",
+    "Shipping"
+  ],
+  "agency": [
+    "DMI"
+  ],
+  "collection_group": "Sea Ice",
   "endpointtype": "FlatGeobuf source",
   "title": "POLARIS (DMI)",
   "extent": {
@@ -33,11 +42,31 @@
     "temporal": {
       "interval": [
         [
-          "2026-07-29T06:19:16.553699Z",
-          null
+          "2025-01-01T00:00:00Z",
+          "2026-07-29T00:00:00Z"
         ]
       ]
     }
   },
-  "license": "other"
+  "license": "other",
+  "providers": [
+    {
+      "name": "DMI",
+      "url": "https://www.dmi.dk"
+    },
+    {
+      "name": "EOX",
+      "url": "https://eox.at/"
+    }
+  ],
+  "assets": {
+    "geoparquet": {
+      "href": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/dmi-polaris/daily_items_merged.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
 }

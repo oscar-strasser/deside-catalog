@@ -17,27 +17,63 @@
       "title": "DMI Ice charts"
     }
   ],
+  "themes": [
+    "Shipping"
+  ],
+  "agency": [
+    "DMI"
+  ],
+  "collection_group": "Sea Ice",
+  "eox:colorlegend": {
+    "title": "Total Sea Ice Concentration",
+    "range": [
+      "#96C8FF",
+      "#8CFFA0",
+      "#FFFF00",
+      "#FF7D06",
+      "#FF0000"
+    ],
+    "domain": [
+      "Open Water",
+      "Very open drift ice",
+      "Open Drift Ice",
+      "Close Drift Ice",
+      "Very Close Drift Ice"
+    ],
+    "scaleType": "categorical",
+    "markType": "circle"
+  },
   "endpointtype": "FlatGeobuf source",
   "title": "DMI Ice charts",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          -80.337264189091,
+          55.252643970043046,
+          10.033447326328545,
+          84.84935228034207
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2026-07-29T06:19:15.506456Z",
-          null
+          "2025-01-01T00:00:00Z",
+          "2026-07-29T00:00:00Z"
         ]
       ]
     }
   },
-  "license": "other"
+  "license": "other",
+  "assets": {
+    "geoparquet": {
+      "href": "https://workspace-ui-public.cif.gtif.eox.at/api/public/share/public-4wazei3y-02/dmi-ice-charts/flatgeobuf/daily_items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    }
+  }
 }
