@@ -182,7 +182,7 @@
       "interval": [
         [
           "2022-01-01T00:00:00Z",
-          "2026-08-03T00:00:00Z"
+          "2026-08-04T00:00:00Z"
         ]
       ]
     }
@@ -195,10 +195,10 @@
       "Polaris_algorithm_dmi_demo"
     ],
     "themes": [
-      "Shipping",
-      "shipping",
       "Aquaculture",
-      "Energy"
+      "shipping",
+      "Energy",
+      "Shipping"
     ],
     "satellite": [
       "Sentinel-1"
