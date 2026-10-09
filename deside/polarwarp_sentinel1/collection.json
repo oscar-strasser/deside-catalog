@@ -184,7 +184,7 @@
       "interval": [
         [
           "2022-01-01T00:00:00Z",
-          "2026-10-08T10:55:23.888375Z"
+          "2026-10-09T10:54:09.979357Z"
         ]
       ]
     }
@@ -196,8 +196,8 @@
       "SHS1"
     ],
     "themes": [
-      "Shipping",
       "Aquaculture",
+      "Shipping",
       "Energy"
     ],
     "satellite": [
